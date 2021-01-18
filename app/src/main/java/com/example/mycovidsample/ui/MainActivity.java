@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mycovidsample.R;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-//        mAboutButton.setOnClickListener(this);
+
         mfindCountryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(MainActivity.this, CountryActivity.class);
                 intent.putExtra("country", country);
                 startActivity(intent);
+                Toast.makeText(MainActivity.this, country, Toast.LENGTH_LONG).show();
             }
 
         });
