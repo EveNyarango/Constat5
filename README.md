@@ -24,6 +24,8 @@ Search for data of a specific country on the search button
 ## Technologies Used
 Java
 
+Picasso
+
 Android
 
 ## Demo
