@@ -1,15 +1,21 @@
 package com.example.mycovidsample.network;
 
-import com.example.mycovidsample.models.CovidCases;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Query;
 
 public interface CovidApi {
-    @GET("cases")
-    Call<CovidCases> getCases(
-            @Query("country") String country
+
+    @GET("countries/?sort=country")
+    Call<List<CountriesResponse>> getCountries();
+
+
+    @GET("countries/{country}")
+    Call<CountriesResponse> getCountryInfo(
+
+            @Path("country") String country
     );
 
+    @GET("all")
+    Call<AllCountriesResponse> getAllCountries();
 }
+

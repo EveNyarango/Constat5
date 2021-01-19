@@ -12,8 +12,6 @@ import android.widget.TextView;
 
 import com.example.mycovidsample.R;
 import com.example.mycovidsample.adapter.CountryListAdapter;
-import com.example.mycovidsample.models.All;
-import com.example.mycovidsample.models.CovidCases;
 import com.example.mycovidsample.network.CovidApi;
 import com.example.mycovidsample.network.CovidClient;
 

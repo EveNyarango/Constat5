@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mycovidsample.R;
-import com.example.mycovidsample.models.CovidCases;
 
 import java.util.List;
 
