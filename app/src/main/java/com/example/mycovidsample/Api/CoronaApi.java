@@ -1,11 +1,11 @@
-package com.example.mycovidsample.network;
+package com.example.mycovidsample.Api;
 
-import com.example.mycovidsample.Constants;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class CovidClient {
+public class CoronaApi {
+
     private static Retrofit retrofit;
     private static final String BASE_URL = "https://corona.lmao.ninja/v2/";
 

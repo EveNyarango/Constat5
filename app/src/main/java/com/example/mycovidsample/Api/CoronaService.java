@@ -1,9 +1,15 @@
-package com.example.mycovidsample.network;
+package com.example.mycovidsample.Api;
+
+import com.example.mycovidsample.models.AllCountriesResponse;
+import com.example.mycovidsample.models.CountriesResponse;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
-public interface CovidApi {
+public interface CoronaService {
 
     @GET("countries/?sort=country")
     Call<List<CountriesResponse>> getCountries();
@@ -18,4 +24,5 @@ public interface CovidApi {
     @GET("all")
     Call<AllCountriesResponse> getAllCountries();
 }
+
 
