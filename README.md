@@ -27,8 +27,8 @@ Java
 Android
 
 ## Demo
-![Screenshot from 2021-01-19 22-46-51](https://user-images.githubusercontent.com/70526252/105088159-9411c780-5aac-11eb-886b-ca1e7df11943.png)
 ![Screenshot from 2021-01-19 22-46-22](https://user-images.githubusercontent.com/70526252/105088193-9bd16c00-5aac-11eb-8863-8b59c3f01985.png)
+![Screenshot from 2021-01-19 22-46-51](https://user-images.githubusercontent.com/70526252/105088159-9411c780-5aac-11eb-886b-ca1e7df11943.png)
 ![Screenshot from 2021-01-19 22-46-44](https://user-images.githubusercontent.com/70526252/105088206-a1c74d00-5aac-11eb-96d8-189cdf8f6535.png)
 
 
