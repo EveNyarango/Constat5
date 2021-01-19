@@ -1,4 +1,4 @@
-package com.example.mycovidsample.Api;
+package com.example.mycovidsample.Network;
 
 import com.example.mycovidsample.models.AllCountriesResponse;
 import com.example.mycovidsample.models.CountriesResponse;

@@ -15,8 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mycovidsample.R;
 import com.example.mycovidsample.adapter.CountryAdapter;
 import com.example.mycovidsample.models.CountriesResponse;
-import com.example.mycovidsample.Api.CoronaApi;
-import com.example.mycovidsample.Api.CoronaService;
+import com.example.mycovidsample.Network.CoronaApi;
+import com.example.mycovidsample.Network.CoronaService;
 
 
 import java.util.ArrayList;

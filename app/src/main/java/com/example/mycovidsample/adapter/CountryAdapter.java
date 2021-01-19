@@ -18,9 +18,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mycovidsample.R;
 import com.example.mycovidsample.models.CountriesResponse;
-import com.example.mycovidsample.Api.CoronaApi;
-import com.example.mycovidsample.Api.CoronaService;
-import com.example.mycovidsample.ui.DetailActivity;
+import com.example.mycovidsample.Network.CoronaApi;
+import com.example.mycovidsample.Network.CoronaService;
+import com.example.mycovidsample.ui.CountryActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -107,10 +107,10 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryH
                     public void onResponse(Call<CountriesResponse> call, Response<CountriesResponse> response) {
 
 
-                        //System.out.println("response size : "+responseList.size());
 
 
-                        Intent intent = new Intent(view.getContext(), DetailActivity.class);
+
+                        Intent intent = new Intent(view.getContext(), CountryActivity.class);
 
                         if (response.body() != null) {
                             intent.putExtra("country", response.body().getCountry());

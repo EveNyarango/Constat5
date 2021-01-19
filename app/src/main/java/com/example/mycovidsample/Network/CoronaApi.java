@@ -1,4 +1,4 @@
-package com.example.mycovidsample.Api;
+package com.example.mycovidsample.Network;
 
 
 import retrofit2.Retrofit;

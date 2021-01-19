@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.example.mycovidsample.R;
 import com.squareup.picasso.Picasso;
 
-public class DetailActivity extends AppCompatActivity {
+public class CountryActivity extends AppCompatActivity {
 
     ImageView ivCountryPoster;
     TextView tvCountryName, tvTodayCases, tvTodayDeath, tvTotalTests, tvTotalCases, tvTotalDeaths, tvTotalRecovered;
@@ -16,7 +16,7 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_country);
 
         tvCountryName = findViewById(R.id.tvCountryName);
         tvTodayCases = findViewById(R.id.tvTodayCases);

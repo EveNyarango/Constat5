@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.mycovidsample.ui.DetailActivity">
+    tools:context="com.example.mycovidsample.ui.CountryActivity">
 
 
     <androidx.core.widget.NestedScrollView
@@ -47,7 +47,7 @@
                 android:id="@+id/ivTodayCases"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/cases" />
+                android:background="@drawable/cases1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
                 android:id="@+id/ivTodayDeath"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/death" />
+                android:background="@drawable/death1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -147,7 +147,7 @@
                 android:id="@+id/ivTotalCases"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/totalcases" />
+                android:background="@drawable/totalcases1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -181,7 +181,7 @@
                 android:id="@+id/ivTotalDeaths"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/totaldeath" />
+                android:background="@drawable/totaldeath2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -215,7 +215,7 @@
                 android:id="@+id/ivTotalRecovered"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/liferecovered" />
+                android:background="@drawable/recovered1" />
 
             <TextView
                 android:layout_width="wrap_content"
