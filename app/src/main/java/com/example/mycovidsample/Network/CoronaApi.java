@@ -9,6 +9,13 @@ public class CoronaApi {
     private static Retrofit retrofit;
     private static final String BASE_URL = "https://corona.lmao.ninja/v2/";
 
+//    public static final String PREFERENCES_EMAIL_KEY = "email";
+public static final String FIREBASE_QUERY_INDEX = "index";
+    public static final String FIREBASE_CHILD_Email = "email";
+
+    public static final String FIREBASE_CHILD_Password = "password";
+
+
     public static Retrofit getRetrofitInstance() {
 
         if (retrofit == null) {
