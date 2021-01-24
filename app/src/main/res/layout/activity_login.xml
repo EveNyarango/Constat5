@@ -62,22 +62,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/purple_500"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="17sp"
             android:text="Don't have an account? Sign up here!"
             android:id="@+id/registerTextView"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_above="@+id/linearLayout"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:fontFamily="monospace"-->
-<!--        android:text="Login"-->
-<!--        android:textColor="#EAE7E5"-->
-<!--        android:textSize="15dp"-->
-<!--        android:textStyle="bold" />-->
 
 </RelativeLayout>

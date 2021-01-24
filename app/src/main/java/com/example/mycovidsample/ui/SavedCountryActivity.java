@@ -1,29 +1,29 @@
-//package com.example.mycovidsample.ui;
-//
-//import androidx.annotation.NonNull;
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.recyclerview.widget.LinearLayoutManager;
-//import androidx.recyclerview.widget.RecyclerView;
-//
-//import android.os.Bundle;
-//import android.view.LayoutInflater;
-//import android.view.View;
-//import android.view.ViewGroup;
-//
-//import com.example.mycovidsample.Constants;
-//import com.example.mycovidsample.R;
-//import com.example.mycovidsample.adapter.FirebaseCovidViewHolder;
-//import com.example.mycovidsample.models.CountriesResponse;
-//import com.firebase.ui.database.FirebaseRecyclerAdapter;
-//import com.firebase.ui.database.FirebaseRecyclerOptions;
-//import com.google.firebase.database.DatabaseReference;
-//import com.google.firebase.database.FirebaseDatabase;
-//
-//import butterknife.BindView;
-//import butterknife.ButterKnife;
-//
-//public class SavedCountryActivity<RecyclerView> extends AppCompatActivity {
-//
+package com.example.mycovidsample.ui;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.mycovidsample.Constants;
+import com.example.mycovidsample.R;
+import com.example.mycovidsample.adapter.FirebaseCovidViewHolder;
+import com.example.mycovidsample.models.CountriesResponse;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class SavedCountryActivity<RecyclerView> extends AppCompatActivity {
+
 //    private DatabaseReference mCountryReference;
 //    private FirebaseRecyclerAdapter<CountriesResponse, FirebaseCovidViewHolder> mFirebaseAdapter;
 //    @BindView(R.id.recyclerView)
@@ -68,4 +68,4 @@
 //            mFirebaseAdapter.stopListening();
 //        }
 //    }
-//}
+}
