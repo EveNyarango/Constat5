@@ -31,12 +31,23 @@ Android
 Firebase
 
 ## Demo
+<<<<<<< HEAD
 
 
 ## Link
 
 https://github.com/EveNyarango/Conastat4
 
+=======
+![Screenshot from 2021-01-21 23-28-13](https://user-images.githubusercontent.com/70526252/105630356-c5e2af80-5e59-11eb-9e78-1f2b50c973bf.png)
+![Screenshot from 2021-01-24 15-20-50](https://user-images.githubusercontent.com/70526252/105630458-705ad280-5e5a-11eb-8bc7-7276c22e9ecb.png)
+![Screenshot from 2021-01-24 15-20-37](https://user-images.githubusercontent.com/70526252/105630365-d2670800-5e59-11eb-918d-eb6187641d19.png)
+![Screenshot from 2021-01-24 15-07-51](https://user-images.githubusercontent.com/70526252/105630367-d5fa8f00-5e59-11eb-838d-186112e033a5.png)
+
+
+## Link
+https://github.com/EveNyarango/Conastat4
+>>>>>>> 4fe7234bc3891b8f5cd34a6959ecac9a5b488f8d
 
 ## Bugs
 No known bug.
