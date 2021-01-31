@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCovidSample">
-        <activity android:name=".ui.SavedCountryActivity"></activity>
+        <activity android:name=".ui.SplashActivity"></activity>
+        <activity android:name=".ui.SavedCountryActivity" />
         <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

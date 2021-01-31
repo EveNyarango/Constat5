@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashActivity"
+    android:background="@color/teal_700">
+
+    <ImageView
+        android:id="@+id/cona"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cona2" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="192dp"
+        android:layout_height="31dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_above="@+id/designer"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="ConaStat"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/designer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designed by Eve"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
