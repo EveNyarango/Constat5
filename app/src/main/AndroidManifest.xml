@@ -20,7 +20,7 @@
 
         </activity>
         <activity android:name=".ui.SavedCountryActivity" />
-        <activity android:name=".ui.LoginActivity">
+        <activity android:name=".ui.LoginActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
         <activity android:name=".ui.CreateAccountActivity" />
         <activity android:name=".ui.MainActivity">

@@ -52,6 +52,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryH
 
                 @Override
                 public int getNewListSize() {
+
                     return countriesList.size();
                 }
 

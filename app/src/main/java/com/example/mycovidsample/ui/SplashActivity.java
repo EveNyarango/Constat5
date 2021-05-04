@@ -14,7 +14,7 @@ import com.example.mycovidsample.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 5000;
+    private static int SPLASH_SCREEN = 7000;
 
     //    variables
     Animation topAnim, bottomAnim;
