@@ -29,6 +29,7 @@
             android:textColor="@color/light"
             android:textColorHint="@color/light"
             android:textSize="20sp"
+            android:drawablePadding="10dp"
             android:layout_margin="10dp"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
@@ -47,6 +48,7 @@
             android:textColor="@color/light"
             android:textColorHint="@color/light"
             android:textSize="20sp"
+            android:drawablePadding="10dp"
             android:layout_margin="10dp"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
@@ -66,6 +68,7 @@
             android:textColorHint="@color/light"
             android:textSize="20sp"
             android:layout_margin="10dp"
+            android:drawablePadding="10dp"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
             android:drawableStart="@drawable/ic_baseline_lock"
@@ -84,6 +87,7 @@
             android:textColorHint="@color/light"
             android:textSize="20sp"
             android:layout_margin="10dp"
+            android:drawablePadding="10dp"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
             android:drawableStart="@drawable/ic_baseline_lock"
@@ -99,24 +103,18 @@
             android:textColor="@color/white"
             android:textSize="18sp"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="17sp"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:background="#ccc"
             android:text="Already have an account? Log in here!"
             android:id="@+id/loginTextView"
             android:layout_gravity="center_horizontal" />
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_above="@+id/linearLayout"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:text="Create Account"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="30dp"-->
-<!--            android:textStyle="bold" />-->
+
     </LinearLayout>
 
 </RelativeLayout>

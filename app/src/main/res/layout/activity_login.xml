@@ -16,12 +16,6 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/linearLayout">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="180dp"-->
-<!--            android:scaleType="fitStart"-->
-<!--            android:src="@drawable/covid1" />-->
 
         <EditText
             android:id="@+id/emailEditText"
@@ -39,6 +33,7 @@
             android:layout_margin="10dp"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
             android:drawableStart="@drawable/ic_baseline_email"
             android:drawableLeft="@drawable/ic_baseline_email"/>
         <EditText
@@ -56,8 +51,10 @@
             android:layout_margin="10dp"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
             android:drawableStart="@drawable/ic_baseline_lock"
             android:drawableLeft="@drawable/ic_baseline_lock"/>
+
         <Button
             android:id="@+id/passwordLoginButton"
             android:layout_width="match_parent"
@@ -69,12 +66,14 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:layout_marginTop="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:background="#ccc"
             android:textStyle="bold"
-            android:textSize="17sp"
+            android:textSize="12sp"
             android:text="Don't have an account? Sign up here!"
             android:id="@+id/registerTextView"
             android:layout_gravity="center_horizontal" />
