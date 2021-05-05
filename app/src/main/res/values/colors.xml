@@ -14,5 +14,6 @@
     <color name="colorAccent">#009688</color>
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondaryText">#727272</color>
+    <color name="light">#08546c</color>
     <color name="colorDivider">#B6B6B6</color>
 </resources>

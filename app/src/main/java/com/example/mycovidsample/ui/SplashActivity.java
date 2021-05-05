@@ -12,13 +12,15 @@ import android.widget.TextView;
 
 import com.example.mycovidsample.R;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class SplashActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 7000;
+    private static int SPLASH_SCREEN = 7500;
 
     //    variables
     Animation topAnim, bottomAnim;
-    ImageView cona;
+    CircleImageView cona;
     TextView heading, designer;
 
     @Override

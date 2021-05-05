@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCovidSample">
-        <activity android:name=".ui.SplashActivity">
+        <activity android:name=".ui.SplashActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
         <activity android:name=".ui.SavedCountryActivity" />
         <activity android:name=".ui.LoginActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
-        <activity android:name=".ui.CreateAccountActivity" />
+        <activity android:name=".ui.CreateAccountActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
