@@ -25,7 +25,7 @@
         android:layout_marginBottom="30dp"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
-        android:text="ConaStat"
+        android:text="RonaStat"
         android:textSize="30sp"
         android:textStyle="bold"
         />
